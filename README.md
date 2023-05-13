@@ -1,4 +1,4 @@
-# Spring_cloud_gateway
+# Realtime Messaging Application
 Java Remind Project
 
 - Apache Kafka를 활용한 실시간 메신저 Application
