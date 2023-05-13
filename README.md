@@ -1,6 +1,8 @@
 # Spring_cloud_gateway
 Java Remind Project
 
+- Apache Kafka를 활용한 실시간 메신저 Application
+
 ## ENV
 ||||
 |--|--|--|
@@ -8,4 +10,5 @@ Java Remind Project
 |Spring Boot Version|3.0.6|-|
 |Java Version|17.0.7|-|
 
+## Architecture
 
