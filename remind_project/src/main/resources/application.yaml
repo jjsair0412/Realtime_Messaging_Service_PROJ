@@ -5,15 +5,4 @@ logging:
 server:
   port: 8000
 
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: fisrt
-          uri: http://localhost:8081/check
-          predicates:
-            - Path=/first/**
-        - id: second
-          uri: http://localhost:8082/check
-          predicates:
-            - Path=/second/**
+    

@@ -11,4 +11,6 @@ Java Remind Project
 |Java Version|17.0.7|-|
 
 ## Architecture
+![project_diagram][project_diagram]
 
+[project_diagram]:./image/project_diagram.png
