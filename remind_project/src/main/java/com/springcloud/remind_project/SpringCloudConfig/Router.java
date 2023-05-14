@@ -19,6 +19,8 @@ public class Router {
             .route(userStart -> userStart.path("/start")
                 .uri("http://127.0.0.1:8000")
             )
+            .route(sender -> sender.path("/sender")
+                .uri("http://127.0.0.1:8001"))
             .build();
     }
 }

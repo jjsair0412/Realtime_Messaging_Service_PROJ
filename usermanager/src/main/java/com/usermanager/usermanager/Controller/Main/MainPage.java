@@ -5,11 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.fasterxml.jackson.annotation.JsonCreator.Mode;
 import com.usermanager.usermanager.Domain.DTO.MainDomain;
 
 import lombok.extern.slf4j.Slf4j;
@@ -20,6 +18,7 @@ public class MainPage {
     
     @Value("${server.port}")
     private String port;
+
 
     @GetMapping("/user")
     public String mainpageString(
