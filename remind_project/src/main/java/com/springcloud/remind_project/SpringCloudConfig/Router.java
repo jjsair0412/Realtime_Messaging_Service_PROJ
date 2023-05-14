@@ -11,9 +11,9 @@ public class Router {
     @Bean
     public RouteLocator gatewayLocator(RouteLocatorBuilder builder){
         return builder.routes()
-            .route(r -> r.path("/first").uri("http://localhost:8001"))
-            .route(r -> r.path("/second").uri("https://naver.com")
+            .route(r -> r.path("/user")
+                .filters(arg -> arg.addRequestParameter("hello", "SCG"))
+                .uri("http://127.0.0.1:8000")
             ).build();
     }
-    
 }
