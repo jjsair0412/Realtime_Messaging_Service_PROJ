@@ -8,12 +8,17 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Router {
     
+    // Default Filter
     @Bean
     public RouteLocator gatewayLocator(RouteLocatorBuilder builder){
         return builder.routes()
-            .route(r -> r.path("/user")
-                .filters(arg -> arg.addRequestParameter("hello", "SCG"))
+            .route(userMain -> userMain.path("/user")
+                .filters(arg -> arg.addRequestParameter("hello", "SCG")) 
+                .uri("http://127.0.0.1:8000") // http://127.0.0.1:8000/user?hello=SCG 
+            )
+            .route(userStart -> userStart.path("/start")
                 .uri("http://127.0.0.1:8000")
-            ).build();
+            )
+            .build();
     }
 }

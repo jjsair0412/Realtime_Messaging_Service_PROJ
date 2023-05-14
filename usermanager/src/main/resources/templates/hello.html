@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <p th:text="'포트번호 : '+ ${port_number}"> </p>
+    <p th:text="'받은 파라미터 : '+ ${hello}"> </p>
+    <p th:text="'포트번호 : '+ ${port}"> </p>
+    <p th:text="'default value : '+ ${default}"> </p>
+    
+    <button type="button" th:onclick="|location.href='@{/start}'|">GO!</button>
 </body>
 </html>

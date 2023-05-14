@@ -3,6 +3,6 @@ logging:
     '[org.springframework.web]': debug
 
 server:
-  port: 8001
+  port: 8000
 
     
